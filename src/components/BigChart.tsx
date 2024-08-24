@@ -17,7 +17,7 @@ export default () => {
       style={{ "background-color": background() }}
       ref={(element) => {
         const chart = echarts.init(element, null, {
-          renderer: "svg",
+          // renderer: "svg",
         });
 
         onMount(async () => {

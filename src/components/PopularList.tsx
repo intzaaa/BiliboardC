@@ -114,7 +114,7 @@ export default () => {
                   class="chart w-auto h-full aspect-[2/1] overflow-hidden "
                   ref={(element) => {
                     chart = echarts.init(element, null, {
-                      renderer: "svg",
+                      // renderer: "svg",
                     });
 
                     onMount(() => {

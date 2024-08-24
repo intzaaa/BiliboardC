@@ -3,12 +3,9 @@
 @tailwind utilities;
 
 body {
-  width: 390px;
-  height: 844px;
-
-  @apply select-none pointer-events-none;
+  @apply select-none pointer-events-none w-dvw h-dvh;
 }
 
 * {
-  @apply transition-all duration-300;
+  @apply transition-all duration-300 transform-gpu;
 }
