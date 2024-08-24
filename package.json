@@ -1,6 +1,6 @@
 {
-  "name": "vite-template-solid",
-  "version": "0.0.0",
+  "name": "biliboard-c",
+  "version": "1.0.0",
   "description": "",
   "scripts": {
     "start": "vite",
@@ -10,6 +10,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/pinyin": "^2.10.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "solid-devtools": "^0.29.2",
@@ -19,11 +20,16 @@
     "vite-plugin-solid": "^2.8.2"
   },
   "dependencies": {
+    "@fontsource-variable/noto-sans-sc": "^5.0.7",
+    "@fontsource-variable/red-hat-mono": "^5.0.20",
     "@solid-primitives/keyed": "^1.2.2",
     "@solidjs/router": "^0.14.3",
     "axios": "^1.7.5",
+    "dayjs": "^1.11.13",
     "echarts": "^5.5.1",
     "fast-average-color": "^9.4.0",
+    "pinyin": "4.0.0-alpha.2",
+    "segmentit": "^2.0.3",
     "solid-js": "^1.8.11"
   },
   "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"

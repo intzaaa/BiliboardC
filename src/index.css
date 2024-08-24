@@ -3,5 +3,12 @@
 @tailwind utilities;
 
 body {
-  @apply w-dvw h-dvh;
+  width: 390px;
+  height: 844px;
+
+  @apply select-none pointer-events-none;
+}
+
+* {
+  @apply transition-all duration-300;
 }

@@ -3,6 +3,10 @@ import { render } from "solid-js/web";
 import { Route, Router } from "@solidjs/router";
 
 import "./index.css";
+// Supports weights 300-700
+import "@fontsource-variable/red-hat-mono";
+// Supports weights 100-900
+import "@fontsource-variable/noto-sans-sc";
 
 import Home from "./Home";
 

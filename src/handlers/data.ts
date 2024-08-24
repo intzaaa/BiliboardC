@@ -3,6 +3,7 @@
 import axios from "axios";
 import { createStore } from "solid-js/store";
 import { Responses } from "../types";
+import { FastAverageColor } from "fast-average-color";
 
 const endpoint = import.meta.env.BILIBOARD_ENDPOINT as string;
 
