@@ -14,9 +14,6 @@ importers:
       '@fontsource-variable/red-hat-mono':
         specifier: ^5.0.20
         version: 5.0.20
-      '@fontsource/fira-sans-condensed':
-        specifier: ^5.0.14
-        version: 5.0.14
       '@solid-primitives/keyed':
         specifier: ^1.2.2
         version: 1.2.2(solid-js@1.8.11)
@@ -35,9 +32,9 @@ importers:
       fast-average-color:
         specifier: ^9.4.0
         version: 9.4.0
-      odometer:
-        specifier: ^0.4.8
-        version: 0.4.8
+      large-small-dynamic-viewport-units-polyfill:
+        specifier: ^0.1.1
+        version: 0.1.1
       pinyin:
         specifier: 4.0.0-alpha.2
         version: 4.0.0-alpha.2(segmentit@2.0.3)
@@ -406,9 +403,6 @@ packages:
 
   '@fontsource-variable/red-hat-mono@5.0.20':
     resolution: {integrity: sha512-WWsoyxUcbigYak5wD8a4uHpoo4Ie56cb8lNTzrzWjOHyCt9ozn7ahu1I26+rgqSsF6VfcFztsm+tpI2vfAJXAg==}
-
-  '@fontsource/fira-sans-condensed@5.0.14':
-    resolution: {integrity: sha512-NAZJl5lYLw5y/Zs+F8DcQ9jY1E7kN1DK0eKJTIDBm9Wm2Y3TU15udZCeeWQl1mNOfBIhpuxnBBX+6xaJFAwbxw==}
 
   '@isaacs/cliui@8.0.2':
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
@@ -988,6 +982,9 @@ packages:
   keypress@0.1.0:
     resolution: {integrity: sha512-x0yf9PL/nx9Nw9oLL8ZVErFAk85/lslwEP7Vz7s5SI1ODXZIgit3C5qyWjw4DxOuO/3Hb4866SQh28a1V1d+WA==}
 
+  large-small-dynamic-viewport-units-polyfill@0.1.1:
+    resolution: {integrity: sha512-98hOXouuWWcWGXaFwztU/LyGjwe8QNYAXRwuGiO3eI2bmDv+pvDNN5G9udP8CQldhyRcJ0gQzFigjHteTLvyQQ==}
+
   lilconfig@2.1.0:
     resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
     engines: {node: '>=10'}
@@ -1065,9 +1062,6 @@ packages:
   object-hash@3.0.0:
     resolution: {integrity: sha512-RSn9F68PjH9HqtltsSnqYC1XXoWe9Bju5+213R98cNGttag9q9yAOTzdbsqvIa7aNm5WffBZFpWYr2aWrklWAw==}
     engines: {node: '>= 6'}
-
-  odometer@0.4.8:
-    resolution: {integrity: sha512-bfKuAhWE/qMCiX9bwX90c5bTpt7MDVeq1e6YsOHQrYokNhv9jhS5JbR9kg6i+FeWmDgalf3VUtwNx1aVaZ8cgg==}
 
   package-json-from-dist@1.0.0:
     resolution: {integrity: sha512-dATvCeZN/8wQsGywez1mzHtTlP22H8OEfPrVMLNr4/eGa+ijtLn/6M5f0dY8UKNrC2O9UCU6SSoG3qRKnt7STw==}
@@ -1720,8 +1714,6 @@ snapshots:
 
   '@fontsource-variable/red-hat-mono@5.0.20': {}
 
-  '@fontsource/fira-sans-condensed@5.0.14': {}
-
   '@isaacs/cliui@8.0.2':
     dependencies:
       string-width: 5.1.2
@@ -2294,6 +2286,8 @@ snapshots:
 
   keypress@0.1.0: {}
 
+  large-small-dynamic-viewport-units-polyfill@0.1.1: {}
+
   lilconfig@2.1.0: {}
 
   lilconfig@3.1.2: {}
@@ -2350,8 +2344,6 @@ snapshots:
   object-assign@4.1.1: {}
 
   object-hash@3.0.0: {}
-
-  odometer@0.4.8: {}
 
   package-json-from-dist@1.0.0: {}
 

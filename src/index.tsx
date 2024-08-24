@@ -1,6 +1,6 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
-import { Route, Router } from "@solidjs/router";
+import "large-small-dynamic-viewport-units-polyfill";
 
 import "./index.css";
 // Supports weights 300-700

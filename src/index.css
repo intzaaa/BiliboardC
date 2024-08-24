@@ -3,7 +3,15 @@
 @tailwind utilities;
 
 body {
-  @apply select-none pointer-events-none w-dvw h-dvh;
+  height: 100vh; /* For browsers that don't support CSS variables */
+  height: calc(var(--1dvh, 1vh) * 100); /* This is the "polyfill" */
+  height: 100dvh; /* This is for future browsers that support svh, dvh and lvh viewport units */
+
+  width: 100vw; /* For browsers that don't support CSS variables */
+  width: calc(var(--1dvw, 1vw) * 100); /* This is the "polyfill" */
+  width: 100dvw; /* This is for future browsers that support svh, dvh and lvh viewport units */
+
+  @apply select-none pointer-events-none;
 }
 
 * {
