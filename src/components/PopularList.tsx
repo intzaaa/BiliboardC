@@ -72,7 +72,7 @@ export default () => {
               style={{
                 "background-color": theme(),
               }}>
-              <div class="left gap-2 h-full flex flex-row justify-start items-center">
+              <div class="left gap-2 h-full w-fit flex flex-row justify-start items-center">
                 <img
                   class="aspect-square rounded-full h-full"
                   src={item().avatar}></img>
@@ -98,7 +98,7 @@ export default () => {
                 </div>
               </div>
 
-              <div class="right gap-2 h-full flex flex-row justify-end items-center">
+              <div class="right gap-2 h-full grow flex flex-row justify-end items-center">
                 <div
                   class="font-bold text-2xl"
                   style={{
