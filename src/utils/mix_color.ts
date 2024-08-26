@@ -22,6 +22,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 
+import { RGB } from "color-blend/dist/types";
+
 function mix_hexes_naive(...hexes: string[]): string {
   const rgbs = hexes.map((hex) => hex2dec(hex));
   const rgb = rgbs
@@ -30,7 +32,11 @@ function mix_hexes_naive(...hexes: string[]): string {
       return acc;
     }, [] as number[])
     .map((e) => e / rgbs.length);
-  const mixture = rgb2hex(rgb[0], rgb[1], rgb[2]);
+  const mixture = rgb2hex({
+    r: rgb[0],
+    g: rgb[1],
+    b: rgb[2],
+  });
   return mixture;
 }
 
@@ -41,7 +47,7 @@ function hex2dec(hex: string): number[] {
     .map((n) => parseInt(n, 16));
 }
 
-function rgb2hex(r: number, g: number, b: number): string {
+function rgb2hex({ r, g, b }: { r: number; g: number; b: number }): string {
   r = Math.round(r);
   g = Math.round(g);
   b = Math.round(b);
@@ -49,6 +55,17 @@ function rgb2hex(r: number, g: number, b: number): string {
   g = Math.min(g, 255);
   b = Math.min(b, 255);
   return "#" + [r, g, b].map((c) => c.toString(16).padStart(2, "0")).join("");
+}
+
+function hex2rgb(hex: string): RGB {
+  let r = parseInt(hex.slice(1, 3), 16);
+  let g = parseInt(hex.slice(3, 5), 16);
+  let b = parseInt(hex.slice(5, 7), 16);
+  return {
+    r,
+    g,
+    b,
+  };
 }
 
 function rgb2cmyk(r: number, g: number, b: number): number[] {
@@ -85,8 +102,12 @@ function mix_hexes(...hexes: string[]): string {
   let cmyks = rgbs.map((rgb) => rgb2cmyk(rgb[0], rgb[1], rgb[2]));
   let mixture_cmyk = mix_cmyks(...cmyks);
   let mixture_rgb = cmyk2rgb(mixture_cmyk[0], mixture_cmyk[1], mixture_cmyk[2], mixture_cmyk[3]);
-  let mixture_hex = rgb2hex(mixture_rgb[0], mixture_rgb[1], mixture_rgb[2]);
+  let mixture_hex = rgb2hex({
+    r: mixture_rgb[0],
+    g: mixture_rgb[1],
+    b: mixture_rgb[2],
+  });
   return mixture_hex;
 }
 
-export { mix_hexes as mix_color };
+export { mix_hexes_naive, mix_hexes, hex2dec, rgb2hex, hex2rgb, rgb2cmyk, cmyk2rgb, mix_cmyks };

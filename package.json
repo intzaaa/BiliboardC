@@ -25,12 +25,15 @@
     "@solid-primitives/keyed": "^1.2.2",
     "@solidjs/router": "^0.14.3",
     "axios": "^1.7.5",
+    "color-blend": "^4.0.0",
     "dayjs": "^1.11.13",
     "echarts": "^5.5.1",
     "fast-average-color": "^9.4.0",
+    "large-small-dynamic-viewport-units-polyfill": "^0.1.1",
     "pinyin": "4.0.0-alpha.2",
     "segmentit": "^2.0.3",
-    "solid-js": "^1.8.11"
+    "solid-js": "^1.8.11",
+    "uniqolor": "^1.1.1"
   },
   "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e"
 }

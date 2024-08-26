@@ -23,6 +23,9 @@ importers:
       axios:
         specifier: ^1.7.5
         version: 1.7.5
+      color-blend:
+        specifier: ^4.0.0
+        version: 4.0.0
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -44,6 +47,9 @@ importers:
       solid-js:
         specifier: ^1.8.11
         version: 1.8.11
+      uniqolor:
+        specifier: ^1.1.1
+        version: 1.1.1
     devDependencies:
       '@types/pinyin':
         specifier: ^2.10.2
@@ -740,6 +746,10 @@ packages:
     resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
     engines: {node: '>= 8.10.0'}
 
+  color-blend@4.0.0:
+    resolution: {integrity: sha512-fYODTHhI/NG+B5GnzvuL3kiFrK/UnkUezWFTgEPBTY5V+kpyfAn95Vn9sJeeCX6omrCOdxnqCL3CvH+6sXtIbw==}
+    engines: {node: '>=10.0.0'}
+
   color-convert@1.9.3:
     resolution: {integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==}
 
@@ -1319,6 +1329,9 @@ packages:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  uniqolor@1.1.1:
+    resolution: {integrity: sha512-HUwezlXCwm5bzsEXW7AP7ybezH13uWENRgYT+3dOdhJPvpYucSqvIGckMiLn+Uy2j0NVf3fPp43uZ4aun3t4Ww==}
 
   update-browserslist-db@1.0.13:
     resolution: {integrity: sha512-xebP81SNcPuNpPP3uzeW1NYXxI3rxyJzF3pD6sH4jE7o/IX+WtSpwnVU+qIsDPyk0d3hmFQ7mjqc6AtV604hbg==}
@@ -2067,6 +2080,8 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
+  color-blend@4.0.0: {}
+
   color-convert@1.9.3:
     dependencies:
       color-name: 1.1.3
@@ -2605,6 +2620,8 @@ snapshots:
   tslib@2.3.0: {}
 
   typescript@5.3.3: {}
+
+  uniqolor@1.1.1: {}
 
   update-browserslist-db@1.0.13(browserslist@4.22.2):
     dependencies:
