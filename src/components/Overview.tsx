@@ -27,6 +27,7 @@ export default () => {
                   min: "dataMin",
                   max: "dataMax",
                   axisLine: {
+                    show: true,
                     lineStyle: {
                       color: rgb2hex(main_theme()),
                     },
@@ -50,6 +51,7 @@ export default () => {
                   // min: "dataMin",
                   // max: "dataMax",
                   axisLine: {
+                    show: true,
                     lineStyle: {
                       color: rgb2hex(main_theme()),
                     },

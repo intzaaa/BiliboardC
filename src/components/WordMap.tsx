@@ -35,13 +35,13 @@ export default () => {
                     },
                     silent: true,
 
-                    squareRatio: 16 / 9,
+                    squareRatio: 1,
                     itemStyle: {
                       color: "transparent",
                       borderColor: "red",
                     },
 
-                    visibleMin: 17500,
+                    visibleMin: 20000,
 
                     top: 0,
                     right: 0,
@@ -59,7 +59,9 @@ export default () => {
                     },
 
                     data: store.data.words
-                      // .filter((word) => word.heat > 2)
+                      .filter((word) => word.heat > 2)
+                      .filter((word) => word.name.length > 1)
+                      .filter((word) => !word.name.split("").every((v, i, a) => v === a[0]))
                       .map((word) => {
                         const hex = uniqolor(word.name).color;
                         return {

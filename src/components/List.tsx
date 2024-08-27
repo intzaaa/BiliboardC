@@ -12,7 +12,10 @@ import { main_theme, main_theme_hex } from "../utils/main_theme";
 export default () => {
   return (
     <Key
-      each={store.data.videos.filter((item) => item.owner.relations.length !== 0).map(({ owner }) => owner)}
+      each={store.data.videos
+        .slice(0, 20)
+        .filter((item) => item.owner.relations.length !== 0)
+        .map(({ owner }) => owner)}
       by={(user) => user.mid}>
       {(user) => {
         const mixed_color = createMemo(() => hardLight(get_image_average_color(user().avatar)(), main_theme()));
