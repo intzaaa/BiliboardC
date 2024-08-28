@@ -10,7 +10,7 @@ const endpoint = import.meta.env.BILIBOARD_ENDPOINT as string;
 console.log(endpoint);
 
 const [store, set_store] = createStore<Responses["/"]>({
-  interval: NaN,
+  interval: 30000,
   data: {
     words: [],
     videos: [],
@@ -18,9 +18,11 @@ const [store, set_store] = createStore<Responses["/"]>({
 });
 
 const corn = async () => {
-  const json: Responses["/"] = await axios.get(endpoint).then((res) => res.data);
+  try {
+    const json: Responses["/"] = await axios.get(endpoint).then((res) => res.data);
 
-  set_store(json);
+    set_store(json);
+  } catch (error) {}
 };
 
 await corn();
